@@ -1,0 +1,40 @@
+<WatchFace width="450" height="450">
+    <Metadata key="CLOCK_TYPE" value="DIGITAL" />
+    <Scene backgroundColor="#000000">
+        <PartImage x="0" y="0" width="450" height="450">
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+            <Image resource="background" />
+        </PartImage>
+        <PartDraw x="0" y="0" width="450" height="450">
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+            <Rectangle x="0" y="0" width="450" height="450">
+                <Fill color="#FFFFFF">
+                    <RadialGradient centerX="72" centerY="145" radius="150" colors="#C0000000 #A0000000 #00000000" positions="0 0.5 1" />
+                </Fill>
+            </Rectangle>
+        </PartDraw>
+        <Group name="interactive_meme" x="0" y="0" width="450" height="450">
+            <Variant mode="AMBIENT" target="alpha" value="0" />
+            <PartText x="55" y="112" width="150" height="32">
+                <Text align="START"><Font family="meme" size="21" color="#FFFFFF">Wait, it's</Font></Text>
+            </PartText>
+            <PartText x="218" y="94" width="200" height="32">
+                <Text align="START"><Font family="meme" size="21" color="#FFFFFF">Always has been</Font></Text>
+            </PartText>
+            <DigitalClock x="30" y="144" width="147" height="66">
+                <TimeText x="0" y="0" width="147" height="66" format="hh:mm" hourFormat="SYNC_TO_DEVICE" align="START">
+                    <Font family="meme" size="48" color="#FFFFFF" />
+                </TimeText>
+            </DigitalClock>
+            <PartText x="176" y="144" width="35" height="66">
+                <Text align="START"><Font family="meme" size="48" color="#FFFFFF">?</Font></Text>
+            </PartText>
+        </Group>
+        <DigitalClock x="100" y="190" width="250" height="70" alpha="0">
+            <Variant mode="AMBIENT" target="alpha" value="255" />
+            <TimeText x="0" y="0" width="250" height="70" format="hh:mm" hourFormat="SYNC_TO_DEVICE" align="CENTER">
+                <Font family="meme" size="48" color="#999999" />
+            </TimeText>
+        </DigitalClock>
+    </Scene>
+</WatchFace>
