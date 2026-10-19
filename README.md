@@ -13,11 +13,11 @@ A watch face inspired by the astronaut meme, with a live clock built into the jo
 - Live time that follows the watch's 12/24-hour setting.
 - "Wait, it's …?" and "Always has been" captions.
 - Dimmed Earth for better time readability.
-- Weather (current temperature and an icon for the coming hour) and step counter between the astronauts, hidden in always-on mode.
+- Weather (current temperature and an icon for the coming hour) and step counter between the astronauts, plus battery percentage on the lower left. All hidden in always-on mode.
 - Minimal always-on display: dim time on a black background.
 - Resource-only Watch Face Format project; no Kotlin or Java rendering service.
 
-Version **1.2** adds a step counter and weather from the watch's built-in data sources. It does **not** include user-selectable complications yet. Weather needs the watch to have a location from the paired phone or network.
+Version **1.2** adds weather, a step counter and battery percentage from the watch's built-in data sources. It does **not** include user-selectable complications yet. Weather needs the watch to have a location from the paired phone or network.
 
 ## Compatibility
 
