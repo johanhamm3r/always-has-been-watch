@@ -13,14 +13,15 @@ A watch face inspired by the astronaut meme, with a live clock built into the jo
 - Live time that follows the watch's 12/24-hour setting.
 - "Wait, it's …?" and "Always has been" captions.
 - Dimmed Earth for better time readability.
+- Step counter and weather (current temperature plus an icon for the coming hour) between the astronauts, hidden in always-on mode.
 - Minimal always-on display: dim time on a black background.
 - Resource-only Watch Face Format project; no Kotlin or Java rendering service.
 
-Version **1.1** moves the left caption and clock down and adds a dark gradient over Earth. This version does **not** include complications yet.
+Version **1.2** adds a step counter and weather from the watch's built-in data sources. It does **not** include user-selectable complications yet. Weather needs the watch to have a location from the paired phone or network.
 
 ## Compatibility
 
-- Wear OS 4 or newer, with Android API 33 or newer.
+- Wear OS 5 or newer, with Android API 34 or newer (required for weather data).
 - Tested on a Samsung Galaxy Watch 8. Other compatible watches have not been verified.
 - Not compatible with older Tizen Galaxy Watches or Apple Watch.
 - The phone installation method below requires an Android phone.
@@ -85,8 +86,8 @@ Select the watch face on the watch, then turn off debugging. See [Google's Wi-Fi
 | Android Gradle Plugin | 8.9.2 |
 | Gradle | 8.11.1, supplied through the wrapper |
 | Compile SDK / target SDK | 35 |
-| Minimum SDK | 33 |
-| Watch Face Format | 1 |
+| Minimum SDK | 34 |
+| Watch Face Format | 2 |
 
 The first build downloads Gradle and dependencies, so an internet connection is required. No separate Gradle installation is needed.
 
@@ -185,7 +186,7 @@ Use Wear OS complication data sources rather than adding a custom sensor-reading
 5. Set `<Editable value="true" />` in `watch_face_info.xml` if users should be able to select their own complication providers.
 6. Decide how the field should look in ambient mode. Test empty data, long values, and different providers.
 
-Follow the [official WFF complications guide](https://developer.android.com/training/wearables/wff/complications) and the [WFF setup guide](https://developer.android.com/training/wearables/wff/setup). Check that elements you add are supported by **WFF version 1**; newer examples may use features that need a newer format and Wear OS version.
+Follow the [official WFF complications guide](https://developer.android.com/training/wearables/wff/complications) and the [WFF setup guide](https://developer.android.com/training/wearables/wff/setup). Check that elements you add are supported by **WFF version 2**; newer examples may use features that need a newer format and Wear OS version.
 
 Adding a slot alone does not draw its data. You must also define how each supported complication type is displayed.
 
