@@ -51,33 +51,33 @@
                                     <Expression name="windy"><![CDATA[[WEATHER.HOURS.1.CONDITION] == 15]]></Expression>
                                 </Expressions>
                                 <Compare expression="clear_day">
-                                    <PartText x="250" y="325" width="30" height="30"><Text align="CENTER"><Font family="meme" size="22" color="#FFFFFF">☀</Font></Text></PartText>
+                                    <PartText x="250" y="304" width="30" height="30"><Text align="CENTER"><Font family="meme" size="22" color="#FFFFFF">☀</Font></Text></PartText>
                                 </Compare>
                                 <Compare expression="clear_night">
-                                    <PartText x="250" y="325" width="30" height="30"><Text align="CENTER"><Font family="meme" size="22" color="#FFFFFF">☾</Font></Text></PartText>
+                                    <PartText x="250" y="304" width="30" height="30"><Text align="CENTER"><Font family="meme" size="22" color="#FFFFFF">☾</Font></Text></PartText>
                                 </Compare>
                                 <Compare expression="cloudy">
-                                    <PartText x="250" y="325" width="30" height="30"><Text align="CENTER"><Font family="meme" size="22" color="#FFFFFF">☁</Font></Text></PartText>
+                                    <PartText x="250" y="304" width="30" height="30"><Text align="CENTER"><Font family="meme" size="22" color="#FFFFFF">☁</Font></Text></PartText>
                                 </Compare>
                                 <Compare expression="fog">
-                                    <PartText x="250" y="325" width="30" height="30"><Text align="CENTER"><Font family="meme" size="22" color="#FFFFFF">≡</Font></Text></PartText>
+                                    <PartText x="250" y="304" width="30" height="30"><Text align="CENTER"><Font family="meme" size="22" color="#FFFFFF">≡</Font></Text></PartText>
                                 </Compare>
                                 <Compare expression="rain">
-                                    <PartText x="250" y="325" width="30" height="30"><Text align="CENTER"><Font family="meme" size="22" color="#FFFFFF">☂</Font></Text></PartText>
+                                    <PartText x="250" y="304" width="30" height="30"><Text align="CENTER"><Font family="meme" size="22" color="#FFFFFF">☂</Font></Text></PartText>
                                 </Compare>
                                 <Compare expression="snow">
-                                    <PartText x="250" y="325" width="30" height="30"><Text align="CENTER"><Font family="meme" size="22" color="#FFFFFF">❄</Font></Text></PartText>
+                                    <PartText x="250" y="304" width="30" height="30"><Text align="CENTER"><Font family="meme" size="22" color="#FFFFFF">❄</Font></Text></PartText>
                                 </Compare>
                                 <Compare expression="thunder">
-                                    <PartText x="250" y="325" width="30" height="30"><Text align="CENTER"><Font family="meme" size="22" color="#FFFFFF">⚡</Font></Text></PartText>
+                                    <PartText x="250" y="304" width="30" height="30"><Text align="CENTER"><Font family="meme" size="22" color="#FFFFFF">⚡</Font></Text></PartText>
                                 </Compare>
                                 <Compare expression="windy">
-                                    <PartText x="250" y="325" width="30" height="30"><Text align="CENTER"><Font family="meme" size="22" color="#FFFFFF">≋</Font></Text></PartText>
+                                    <PartText x="250" y="304" width="30" height="30"><Text align="CENTER"><Font family="meme" size="22" color="#FFFFFF">≋</Font></Text></PartText>
                                 </Compare>
                             </Condition>
                         </Compare>
                     </Condition>
-                    <PartText x="282" y="326" width="72" height="29">
+                    <PartText x="282" y="305" width="72" height="29">
                         <Text align="START">
                             <Font family="meme" size="21" color="#FFFFFF">
                                 <Template>%s°<Parameter expression="[WEATHER.TEMPERATURE]" /></Template>
@@ -86,17 +86,10 @@
                     </PartText>
                 </Compare>
             </Condition>
-            <PartText x="255" y="356" width="100" height="29">
+            <PartText x="255" y="332" width="100" height="29">
                 <Text align="START">
                     <Font family="meme" size="21" color="#FFFFFF">
                         <Template>%s<Parameter expression="[STEP_COUNT]" /></Template>
-                    </Font>
-                </Text>
-            </PartText>
-            <PartText x="255" y="386" width="100" height="29">
-                <Text align="START">
-                    <Font family="meme" size="21" color="#FFFFFF">
-                        <Template>%s%%<Parameter expression="[BATTERY_PERCENT]" /></Template>
                     </Font>
                 </Text>
             </PartText>
